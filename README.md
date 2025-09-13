@@ -5,3 +5,5 @@
     gleam language
 
     mother planet kepler
+
+    BigInt Float Double
