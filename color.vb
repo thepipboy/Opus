@@ -131,41 +131,41 @@ Imports System
 Imports System.Collections.Generic
 
 Module Red
-Public Interface IC1H4
+Interface IC1H4
     ReadOnly Property CarbonCount As Integer
     ReadOnly Property HydrogenCount As Integer
 End Interface
 
-Public Class C1H4
+Class C1H4
     Implements IC1H4
 
-    Public ReadOnly Property CarbonCount As Integer Implements IC1H4.CarbonCount
+    ReadOnly Property CarbonCount As Integer Implements IC1H4.CarbonCount
             Return 1
     End Property
 
-    Public ReadOnly Property HydrogenCount As Integer Implements IC1H4.HydrogenCount
+    ReadOnly Property HydrogenCount As Integer Implements IC1H4.HydrogenCount
             Return 4
     End Property
 End Class
 
-Public Class C5H8
+Class C5H8
     Implements IC1H4
           
-    Public ReadOnly Property CarbonCount As Integer Implements IC1H4.CarbonCount
+    ReadOnly Property CarbonCount As Integer Implements IC1H4.CarbonCount
             Return 5
     End Property
-    Public ReadOnly Property HydrogenCount As Integer Implements IC1H4.HydrogenCount
+    ReadOnly Property HydrogenCount As Integer Implements IC1H4.HydrogenCount
             Return 8
     End Property
 End Class
 
-Public Class C13H24
+Class C13H24
     Implements IC1H4
           
-    Public ReadOnly Property CarbonCount As Integer Implements IC1H4.CarbonCount
+    ReadOnly Property CarbonCount As Integer Implements IC1H4.CarbonCount
             Return 13
     End Property
-    Public ReadOnly Property HydrogenCount As Integer Implements IC1H4.HydrogenCount
+    ReadOnly Property HydrogenCount As Integer Implements IC1H4.HydrogenCount
             Return 24
     End Property
 End Class
@@ -190,37 +190,37 @@ Module Green
 End Module
 Console.WriteLine(C1H4,C5H8,C13,H24)
 
-Public Interface IC2H2
+Interface IC2H2
     ReadOnly Property CarbonCount As Integer
     ReadOnly Property HydrogenCount As Integer
 End Interface
 
-Public Class C2H2
+Class C2H2
     Implements IC2H2
-    Public ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
+    ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
             Return 2
     End Property
-    Public ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
+    ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
             Return 2
     End Property
 End Class
 
-Public Class C4H2
+Class C4H2
     Implements IC2H2
-    Public ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
+    ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
             Return 4
     End Property
-    Public ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
+    ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
             Return 2
     End Property
 End Class
 
-Public Class C6H2
+Class C6H2
     Implements IC2H2
-    Public ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
+    ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
             Return 6 
     End Property
-    Public ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
+    ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
             Return 2
     End Property
 End Class
@@ -246,37 +246,37 @@ End Module
 
 Console.WriteLine(C2H2,C4H2,C6H2)
 
-Public Interface IC2H4
+Interface IC2H4
     ReadOnly Property CarbonCount As Integer
     ReadOnly Property HydrogenCount As Integer
 End Interface
 
 Class C2H4
     Implements IC2H4
-    Public ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
+    ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
             Return 2
     End Property
-    Public ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
+    ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
             Return 4
     End Property
 End Class
 
 Class C6H8
     Implements IC2H4
-    Public ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
+    ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
             Return 6
     End Property
-    Public ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
+    ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
             Return 8
     End Property
 End Class
 
 Class C6H2
     Implements IC2H4
-    Public ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
+    ReadOnly Property CarbonCount As Integer Implements IC2H2.CarbonCount
             Return 14
     End Property
-    Public ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
+    ReadOnly Property HydrogenCount As Integer Implements IC2H2.HydrogenCount
             Return 12
     End Property
 End Class
